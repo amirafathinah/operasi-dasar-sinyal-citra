@@ -23,7 +23,7 @@ Eksperimen ini bertujuan untuk mengimplementasikan sekaligus menganalisis berbag
 * **Amplifikasi Citra & Analisis Histogram:** Melakukan penguatan kontras citra yang divalidasi melalui visualisasi sebaran nilai piksel pada grafik histogram sebelum dan sesudah operasi.
 
 ## Bagian C: Uji Sistem Linier
-* Melakukan pengujian matematis dan visual terhadap sistem $T_1(x) = 2x$ dan sistem $T_2(x) = x^2$ untuk membuktikan pemenuhan syarat properti **Homogenitas** ($T(\alpha x) = \alpha T(x)$) dan **Additivitas** ($T(x_1 + x_2) = T(x_1) + T(x_2)$).
+* Melakukan pengujian matematis dan visual terhadap sistem $T_1(x) = 2x$ dan sistem $T_2(x) = x^2$ untuk membuktikan pemenuhan syarat properti **Homogenitas** $T(\alpha x) = \alpha T(x)) dan **Additivitas** $T(x_1 + x_2) = T(x_1) + T(x_2)).
   
 ## Struktur Direktori Repositori
 Tata kelola berkas di dalam repositori ini diisolasi berdasarkan fungsi masing-masing komponen sebagai berikut:
