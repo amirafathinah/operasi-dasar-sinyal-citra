@@ -1,4 +1,4 @@
-# Operasi Dasar Sinyal Citra
+# Pengolahan Sinyal Digital: Operasi Sinyal, Operasi Citra, dan Uji Sistem Linier
 Repositori ini berisi proyek eksperimen berbasis Python untuk memenuhi tugas individu mata kuliah Pengolahan Sinyal Digital
 
 ## Identitas Mahasiswa
@@ -20,10 +20,10 @@ Eksperimen ini bertujuan untuk mengimplementasikan sekaligus menganalisis berbag
 * **Ekstraksi Metadata Citra:** Membaca properti spasial meliputi dimensi resolusi, tipe data, serta nilai minimum dan maksimum piksel citra masukan.
 * **Penjumlahan Citra (*Image Blending*):** Melakukan kombinasi linier dua citra berdimensi sama (melalui proses *resizing* jika diperlukan) untuk menganalisis efeknya terhadap kecerahan (*brightness*) dan detail visual.
 * **Penggeseran Citra (Translasi Spasial):** Menggeser koordinat piksel secara horizontal dan vertikal ($\Delta i$ dan $\Delta j$) serta menganalisis area kosong (*padding*) yang terbentuk.
-* **Amplifikasi Citra & Analisis Histogram:** Melakukan penguatan kontras citra yang divalidasi melalui visualisasi sebaran nilai piksel pada grafik histogram sebelum dan sesudah operasi.
+* **Amplifikasi Citra & Analisis Histogram:** Mengalikan intensitas piksel menggunakan faktor pengali α untuk mengamati perubahan brightness, distribusi histogram, dan potensi saturasi nilai piksel.
 
 ## Bagian C: Uji Sistem Linier
-* Melakukan pengujian matematis dan visual terhadap sistem $T_1(x) = 2x$ dan sistem $T_2(x) = x^2$ untuk membuktikan pemenuhan syarat properti **Homogenitas** $T(\alpha x) = \alpha T(x)) dan **Additivitas** $T(x_1 + x_2) = T(x_1) + T(x_2)).
+* Melakukan pengujian matematis dan visual terhadap sistem $T_1(x) = 2x$ dan sistem $T_2(x) = x^2$ untuk membuktikan pemenuhan syarat properti **Homogenitas** T(\alpha x) = \alpha T(x) dan **Additivitas** $T(x_1 + x_2) = T(x_1) + T(x_2).
   
 ## Struktur Direktori Repositori
 Tata kelola berkas di dalam repositori ini diisolasi berdasarkan fungsi masing-masing komponen sebagai berikut:
@@ -33,7 +33,55 @@ Tata kelola berkas di dalam repositori ini diisolasi berdasarkan fungsi masing-m
 │   └── operasi_sinyal_citra.ipynb  # Sumber kode utama eksperimen (Jupyter Notebook)
 ├── images/
 │   └── citra_input.jpg             # Aset citra digital yang digunakan dalam Bagian B
+│   └── citra_input2.jpg            \
 ├── report/
 │   └── laporan.pdf                 # Laporan analisis teknis 
 ├── README.md                       # Dokumentasi utama proyek 
 └── requirements.txt                # Daftar pustaka (*dependencies*) Python yang diperlukan
+
+## Requirements
+
+- Python 3.10+
+- NumPy
+- Matplotlib
+- OpenCV (opencv-python)
+
+Install dependency menggunakan:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Cara Menjalankan
+
+1. Clone repositori
+
+```bash
+git clone https://github.com/username/repo.git
+```
+
+2. Install dependency
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Jalankan notebook
+
+```
+notebook/operasi_sinyal_citra.ipynb
+```
+
+## Output
+
+Eksperimen menghasilkan:
+
+- Visualisasi sinyal diskrit
+- Operasi penjumlahan sinyal
+- Operasi penggeseran sinyal
+- Operasi amplifikasi sinyal
+- Operasi penjumlahan citra
+- Operasi translasi citra
+- Histogram sebelum dan sesudah amplifikasi
+- Pengujian homogenitas sistem
+- Pengujian additivitas sistem
