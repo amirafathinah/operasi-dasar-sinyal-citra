@@ -38,6 +38,7 @@ Tata kelola berkas di dalam repositori ini diisolasi berdasarkan fungsi masing-m
 │   └── laporan.pdf                 # Laporan analisis teknis 
 ├── README.md                       # Dokumentasi utama proyek 
 └── requirements.txt                # Daftar pustaka (*dependencies*) Python yang diperlukan
+```
 
 ## Requirements
 
